@@ -1,0 +1,14 @@
+query FindAllMessages() {
+  db_allMessages {
+    data {
+      content
+      timestamp
+      user {
+        _id
+        name
+        email
+        image
+      }
+    }
+  }
+}
